@@ -1,6 +1,11 @@
 # DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models
 
-**NOTE**: This is a modified version of DecodingTrust and is not the official implementation.
+**NOTE**: This is a modified version of DecodingTrust and is not the official implementation. The major differences include:
+
+* Fairness: Even if not recognized or refused, all predictions will be included in fairness metrics.
+* Ethics: The score will be computed based on all samples. Refusal samples will also be counted.
+* OOD: Record rejection rates.
+* Stereotype: Improve the disagree/agree corpus. 
 
 ## Overview
 
