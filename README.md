@@ -1,5 +1,7 @@
 # DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models
 
+**NOTE**: This is a modified version of DecodingTrust and is not the official implementation.
+
 ## Overview
 
 This repo contains the source code of DecodingTrust. This research endeavor is designed to help researchers better understand the capabilities, limitations, and potential risks associated with deploying these state-of-the-art Large Language Models (LLMs). See our paper for details.
