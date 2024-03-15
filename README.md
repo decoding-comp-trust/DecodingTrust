@@ -6,8 +6,8 @@
 * Ethics: The score will be computed based on all samples. Refusal samples will also be counted, which means higher refusal rates will cause lower FPR in our metric (but not in the original DecodingTrust).
 
 Other minor modifications include:
-* OOD: Record rejection rates.
-* Stereotype: Improve the disagree/agree corpus. 
+* OOD: Record refusal rates.
+* Stereotype: Improve the disagree/agree corpus which can significantly improve the accuracy of the stereotype assessment. 
 
 ## Overview
 
