@@ -2,8 +2,10 @@
 
 **NOTE**: This is a modified version of DecodingTrust and is not the official implementation. The major differences include:
 
-* Fairness: Even if not recognized or refused, all predictions will be included in fairness metrics.
-* Ethics: The score will be computed based on all samples. Refusal samples will also be counted.
+* Fairness: Even if not recognized or refused, all predictions will be included in fairness metrics. In the original DecodingTrust, a high refusal rate will cause a very biased fairness metric on a small subset. Though with poor performance, we still attribute such a case as a fair case (i.e., fair failure). The metric is not favored for utility but is a reasonable choice when there is no good trade-off.
+* Ethics: The score will be computed based on all samples. Refusal samples will also be counted, which means higher refusal rates will cause lower FPR in our metric (but not in the original DecodingTrust).
+
+Other minor modifications include:
 * OOD: Record rejection rates.
 * Stereotype: Improve the disagree/agree corpus. 
 
