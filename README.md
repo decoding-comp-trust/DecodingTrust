@@ -273,7 +273,7 @@ The data subdir includes our proposed/generated datasets essential for the evalu
 For now, we suggest installing DecodingTrust by cloning our repository and install it in editable mode. This will keep the data, code, and configurations in the same place. 
 
 ```bash
-git clone https://github.com/AI-secure/DecodingTrust.git && cd DecodingTrust
+git clone https://github.com/decoding-comp-trust/DecodingTrust.git && cd DecodingTrust
 pip install -e .
 ```
 
@@ -282,14 +282,14 @@ Please note that this will install PyTorch with `pip`. If your system does not h
 ```bash
 conda create --name dt-test python=3.9 pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 conda activate dt-test
-pip install "decoding-trust @ git+https://github.com/AI-secure/DecodingTrust.git"
+pip install "decoding-trust @ git+https://github.com/decoding-comp-trust/DecodingTrust.git"
 ```
 
 It is also possible to install DecodingTrust as a standalone package, but you will need to clone our repository again to run it with our data.
 ```bash
 conda create --name dt-test python=3.9
 conda activate dt-test
-pip install "decoding-trust @ git+https://github.com/AI-secure/DecodingTrust.git"
+pip install "decoding-trust @ git+https://github.com/decoding-comp-trust/DecodingTrust.git"
 ```
 
 ### Support for the `ppc64le` Architecture 
